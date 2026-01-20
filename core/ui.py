@@ -126,6 +126,30 @@ def apply_mobile_ui(theme: dict | None = None):
         .roza-spacer {{
             display: none !important;
         }}
+        /* ===== METİN KONTRAST DÜZELTMELERİ ===== */
+
+/* Kart içindeki tüm yazılar */
+.roza-card,
+.roza-card p,
+.roza-card span,
+.roza-card b {
+    color: #0F172A !important; /* çok koyu */
+    font-weight: 700 !important;
+}
+
+/* Soru kelimesi / başlık */
+.roza-card h2,
+.roza-card h3 {
+    color: #020617 !important; /* neredeyse siyah */
+    font-weight: 900 !important;
+}
+
+/* Küçük açıklamalar */
+.roza-small {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
         </style>
         """,
         unsafe_allow_html=True
