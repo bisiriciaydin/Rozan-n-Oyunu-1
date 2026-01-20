@@ -3,7 +3,7 @@ import streamlit as st
 from core.state import init_state, go
 from core.theme import pick_theme
 from core.ui import apply_mobile_ui
-from core.music import play_music, music_controls
+from core.music import music_controls
 from games.math_game import render as math_render
 from games.turkish_game import render as turkish_render
 from games.english_game import render as english_render
@@ -20,9 +20,7 @@ def menu_page():
     theme = pick_theme()
     apply_mobile_ui(theme)
 
-    
-    play_music()
-    music_controls()
+           music_controls()
 
     st.markdown(
         """
