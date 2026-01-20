@@ -20,7 +20,7 @@ def menu_page():
     theme = pick_theme()
     apply_mobile_ui(theme)
 
-           music_controls()
+    music_controls()
 
     st.markdown(
         """
