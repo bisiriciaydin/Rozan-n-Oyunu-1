@@ -41,14 +41,14 @@ def _new_question():
 def _answer(choice: int):
     if choice == st.session_state.math_answer:
         st.session_state.math_score += POINT
-        st.session_state.math_msg = ("success", "Harika! ⭐ Doğru bildin!")
+        st.session_state.math_msg = ("success", "AFERİM LAN!! ⭐ Doğru bildin!")
         st.balloons()
     else:
         # Yanlışta 10 puan düş, 0'ın altına inmesin
         st.session_state.math_score = max(
             0, st.session_state.math_score - POINT
         )
-        st.session_state.math_msg = ("info", "Olabilir 😊 Bir daha deneyelim!")
+        st.session_state.math_msg = ("info", "KERİZİM 😊 Bir daha deneyelim!")
 
     _new_question()
     st.rerun()
@@ -73,7 +73,7 @@ def render(go_menu):
         st.markdown(
             """
             <div class="roza-hero" style="text-align:center;">
-                <h1>🎉 HARİKASIN ROZA! 🎉</h1>
+                <h1>🎉 HARİKASIN ASLAN KIZIM ROZA! 🎉</h1>
                 <p class="roza-small">100 puana ulaştın! ⭐⭐⭐</p>
             </div>
             """,
