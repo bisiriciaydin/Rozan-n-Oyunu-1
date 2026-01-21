@@ -111,11 +111,11 @@ def _answer(choice: str):
 
     if correct:
         st.session_state.en_score += POINT
-        st.session_state.en_msg = ("success", Aferim Kızıma ⭐")
+        st.session_state.en_msg = ("success", Aferim Kizima ⭐")
         st.balloons()
     else:
         st.session_state.en_score = max(0, st.session_state.en_score - POINT)
-        st.session_state.en_msg = ("info", "Mal Roza Yanlış Yaptın 😊")
+        st.session_state.en_msg = ("info", "Mal Roza Yanlıs Yaptın 😊")
 
     _new_question()
     st.rerun()
