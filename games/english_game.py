@@ -115,7 +115,7 @@ def _answer(choice: str):
         st.balloons()
     else:
         st.session_state.en_score = max(0, st.session_state.en_score - POINT)
-        st.session_state.en_msg = ("info", "Mal Roza Yanlıs Yaptın 😊")
+        st.session_state.en_msg = ("info", "Mal Roza Yanliss Yaptin 😊")
 
     _new_question()
     st.rerun()
