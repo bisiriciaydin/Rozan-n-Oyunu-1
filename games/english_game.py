@@ -140,7 +140,7 @@ def render(go_menu):
         st.markdown(
             """
             <div class="roza-hero" style="text-align:center;">
-                <h1>🎉 AMAZING! 🎉</h1>
+                <h1>🎉 HELAL OLSUN LAN!!! 🎉</h1>
                 <p class="roza-small">100 puana ulaştın!</p>
             </div>
             """,
